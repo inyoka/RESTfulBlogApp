@@ -22,6 +22,20 @@ var Blog = mongoose.model("Blog", blogSchema);
 
 // Restful Routes
 
+app.get("/", function(req, res){
+  res.redirect("/blogs");
+});
+
+app.get("/blogs", function(req, res){
+  Blog.find({}, function(err, blogs){
+    if(err) {
+      console.log(err);
+    } else {
+      res.render("index", {blogs: blogs});
+    }
+  });
+});
+
 var listener = app.listen(3000, "127.0.0.1", function(){
   var address = listener.address().address;
   var port = listener.address().port;
