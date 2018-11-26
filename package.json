@@ -1,0 +1,24 @@
+{
+  "name": "restfulblogapp",
+  "version": "1.0.0",
+  "description": "RESTful Blog using Node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inyoka/RESTfulBlogApp.git"
+  },
+  "keywords": [
+    "REST",
+    "blog",
+    "node"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inyoka/RESTfulBlogApp/issues"
+  },
+  "homepage": "https://github.com/inyoka/RESTfulBlogApp#readme"
+}
