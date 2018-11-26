@@ -11,6 +11,15 @@ app.use(express.static("public"));
 app.use(bodyparser.urlencoded({extended:true}));
 
 // Mongoose model configuration
+
+var blogSchema = new mongoose.Schema({
+    title: String,
+    image: String,
+    body: String,
+    created: {type: Date, default: Date.now}
+});
+var Blog = mongoose.model("Blog", blogSchema);
+
 // Restful Routes
 
 var listener = app.listen(3000, "127.0.0.1", function(){
