@@ -1,6 +1,7 @@
 # My files to ignore ...
 nohup.out
 package-lock.json
+notes.txt
 
 # Logs
 logs
